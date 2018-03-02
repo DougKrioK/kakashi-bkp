@@ -1,0 +1,39 @@
+{
+  "name": "nodejs2",
+  "version": "1.0.0",
+  "description": "API Rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DougKrioK"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "douglaspinheiro@id.uff.br",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DougKrioK"
+  },
+  "homepage": "https://github.com/DougKrioK",
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "axios": "^0.17.1",
+    "big.js": "^5.0.3",
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "helmet": "^3.9.0",
+    "moment": "^2.20.1",
+    "mysql": "^2.15.0",
+    "node-schedule": "^1.3.0",
+    "rimraf": "^2.6.2"
+  }
+}
