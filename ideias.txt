@@ -1,0 +1,11 @@
+sistema de gerenciamento de backup
+    controle de usuarios
+    recuperação de senha
+    visualização de logs de backup
+    visualização dos backups, com download, e exclusao
+    controle de intervalo de bkp, com ativação e desativação
+    varias opções de bancos de dados, (postgress, mysql)
+    envio de logs por email automaticamente.
+
+    controle de backup de arquivos.
+    

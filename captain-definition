@@ -1,4 +1,16 @@
 {
-  "schemaVersion" :1 ,
-  "templateId" :"node/8.9.4"
- }
+   "schemaVersion" :1 ,
+   "dockerfileLines" :[
+      "FROM douglaspinheiro/ubuntu-node-mysqlclient",
+      "RUN mkdir -p /usr/src/app",
+      "WORKDIR /usr/src/app",
+      "COPY ./src/package.json /usr/src/app/",
+      "COPY ./src /usr/src/app",
+      "RUN npm install",
+      "ENV NODE_ENV production",
+      "ENV TZ America/Sao_Paulo",
+      "RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone",
+      "EXPOSE 80",
+      "CMD [ \"npm\", \"start\" ]"
+   ]
+}
